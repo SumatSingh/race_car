@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* body{
+    overflow: hidden;
+} */
+
+.container {
+    /* height:100vh; */
+    width: 100vw;
+    background-color: brown;
+}
+
+/* .sky{
+    height: 35vh;
+    background-image: url(../img/cloud2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+.trees {
+    height: 70vh;
+    width: 800vw;
+    background-image: url(../img/trees.jpeg);
+    /* background-repeat: no-repeat; */
+    background-size: 1536px 557px;
+    /* background-size: cover; */
+    animation: nature linear 35s infinite;
+}
+
+.road {
+    height: 50vh;
+    width: 8000vw;
+    background-image: url(../img/road.jpeg);
+    /* background-repeat: no-repeat; */
+    background-size: 1536px 337px;
+    animation: roadround linear 6s infinite;
+    /* margin: 20px 0  0 0 ; */
+}
+
+.car {
+    /* position: absolute; */
+    bottom: 208px;
+    left: 387px;
+    position: relative;
+    display: flex;
+    animation: rounded2 linear 1s infinite;
+}
+
+.wheal1 {
+    width: 5vw;
+    height: 15vh;
+}
+
+/* .wheal2 {
+    width: 5vw;
+height: 15vh;
+top: 65px;
+position: relative;
+left: -404px;
+} */
+
+.wheal1 img {
+    height: 7vh;
+    width: 3vw;
+    border-radius: 50%;
+    right: 134px;
+    top: 67px;
+    position: relative;
+    animation: rounded linear 1s infinite;
+}
+
+.wheal2 img {
+    height: 7vh;
+    width: 3vw;
+    /* background-color: aqua; */
+    border-radius: 50%;
+    top: 65px;
+    position: relative;
+    left: -404px;
+    animation: rounded linear 1s infinite;
+
+}
+
+@keyframes rounded {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes roadround {
+    100%{
+        transform:translateX(-500vw);
+    }
+}
+@keyframes rounded2 {
+    0% {
+        transform: translatey(-5px);
+    }
+    50%{
+        transform: translatey(5px);
+    }
+    100%{
+        transform: translatey(-5px);
+    }
+}
+@keyframes nature {
+    100%{
+        transform:translateX(-500vw);
+    }
+}
